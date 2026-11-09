@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Company Media - authorization</title>
+<style>body{font:16px -apple-system,Segoe UI,Roboto,sans-serif;max-width:640px;margin:48px auto;padding:0 16px;background:#fff;color:#1a2233}
+@media (prefers-color-scheme:dark){body{background:#0f1420;color:#e8ecf5}}</style></head><body>
+<h2>AI Company Media</h2><p id="m">Completing authorization on the owner's computer...</p>
+<script>
+// Forwards the OAuth result (code/state/error) to the local tool running on the owner's own computer (127.0.0.1).
+// Nothing is stored or sent anywhere else.
+(function(){var q=location.search||'';if(!q){document.getElementById('m').textContent='No authorization data.';return;}
+location.replace('http://127.0.0.1:8772/'+q);})();
+</script></body></html>
